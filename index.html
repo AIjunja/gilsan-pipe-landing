@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101e2c">
+  <meta name="description" content="길산파이프 랜딩페이지 디자인 시안. 스테인리스 강관, 판재와 코일, 봉강 제품을 살펴보고 상담에 필요한 정보를 준비하세요.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>길산파이프 — 산업을 잇는 힘</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="motion.css">
+  <script src="app.js" defer></script>
+  <script src="motion.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="길산파이프 처음으로"><img src="assets/logo.gif" width="220" height="92" alt="길산파이프(주)"></a>
+    <nav class="desktop-nav" aria-label="주 메뉴">
+      <a href="#about">기업소개</a><a href="#products">제품소개</a><a href="#quality">기술과 품질</a><a href="#contact">오시는 길</a>
+    </nav>
+    <div class="header-actions"><button class="header-inquiry" data-inquiry>제품 상담 <span aria-hidden="true">↗</span></button><button class="menu-toggle" aria-label="메뉴 열기" aria-controls="mobile-nav" aria-expanded="false"><span></span><span></span></button></div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="모바일 메뉴" hidden><a href="#about">기업소개</a><a href="#products">제품소개</a><a href="#quality">기술과 품질</a><a href="#contact">오시는 길</a></nav>
+  </header>
+
+  <main id="main">
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <button class="motion-toggle" aria-pressed="false" aria-label="모션 일시정지"><span class="motion-toggle-icon" aria-hidden="true">Ⅱ</span><span class="motion-toggle-label">모션 정지</span></button>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image"><img src="assets/hero-01.jpg" width="3987" height="1301" alt="논산 길산파이프 생산시설 전경" fetchpriority="high"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-art" aria-hidden="true"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><img src="assets/steel-pipes.svg" width="720" height="720" alt=""><span class="art-coordinate">MATERIAL STUDY — STAINLESS STEEL</span></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow light"><span class="status-dot"></span> THE STRENGTH THAT CONNECTS INDUSTRY</p>
+        <h1 id="hero-title"><span class="title-line"><span>산업을 잇는 힘,</span></span><span class="title-line"><span>길산의 <em class="steel-text">스테인리스.</em></span></span></h1>
+        <p class="hero-description">소재에서 시작해, 더 큰 가능성으로.<br> 스테인리스 강관의 생산부터 다양한 철강 제품의 공급까지.</p>
+        <div class="hero-actions"><a class="button red" href="#products">제품 살펴보기 <span aria-hidden="true">↗</span></a><button class="text-button light" data-inquiry>규격·구매 상담 <span aria-hidden="true">↗</span></button></div>
+      </div>
+      <div class="hero-caption"><span class="crosshair" aria-hidden="true"></span><span>NONSAN, KOREA<br><b>배경: 논산공장 · 전경: 소재 형상 그래픽</b></span></div>
+      <div class="hero-bottom wrap"><span>STAINLESS STEEL. SOLID POSSIBILITIES.</span><a href="#about" aria-label="기업소개로 내려가기">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <div class="identity-strip wrap">
+      <div><span class="micro">OUR BEGINNING</span><strong>1991<span>길산정밀에서 시작</span></strong></div>
+      <div><span class="micro">OUR MATERIAL</span><strong>STAINLESS<span>생산과 판매의 전문성</span></strong></div>
+      <div><span class="micro">OUR HOME</span><strong>NONSAN<span>충남 논산, 산업의 현장</span></strong></div>
+    </div>
+
+    <section id="about" class="about section wrap">
+      <div class="section-marker"><span class="red-dot"></span>01 — ABOUT GILSAN</div>
+      <div class="about-copy"><h2>좋은 소재가<br>더 나은 산업을 만듭니다.</h2><div class="about-description"><p>눈에 보이는 구조물부터 보이지 않는 부품까지.<br>우리의 일상과 산업을 지탱하는 곳에 스테인리스가 있습니다.</p><p>길산파이프는 1991년 길산정밀로 시작해 스테인리스 강관을 생산해 왔습니다. 구조관과 각관, 판재와 코일, 다양한 봉강 제품으로 고객의 다음 작업을 함께합니다.</p><a class="inline-link" href="https://www.gilsan.co.kr/m1/page1.asp" target="_blank" rel="noopener noreferrer">길산을 더 알아보기 <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+
+    <section class="material-story" aria-labelledby="material-title">
+      <div class="material-stage wrap">
+        <div class="material-intro"><p class="section-marker"><span class="red-dot"></span>THE SHAPE OF POSSIBILITY</p><h2 id="material-title">소재에서 형상으로.<br>가능성이 만들어지는 과정.</h2><p class="material-lead">스테인리스의 쓰임은<br>형태를 만들어가는 기술에서 시작됩니다.</p><div class="material-steps" role="group" aria-label="소재 형상 장면 선택"><button class="active" data-material-step="0" aria-pressed="true"><b>01</b><span>소재<small>MATERIAL</small></span><i aria-hidden="true">↗</i></button><button data-material-step="1" aria-pressed="false"><b>02</b><span>원형<small>ROUND</small></span><i aria-hidden="true">↗</i></button><button data-material-step="2" aria-pressed="false"><b>03</b><span>각형<small>SQUARE</small></span><i aria-hidden="true">↗</i></button></div><p class="material-copy" aria-live="off">가공을 기다리는 한 장의 소재.<br>다음 형태를 위한 출발점입니다.</p></div>
+        <div class="material-graphic"><span class="drawing-label">GILSAN / FORM EXPLORATION</span><svg id="material-svg" viewBox="0 0 680 600" role="img" aria-label="판재에서 원형과 사각형 강관으로 변하는 소재 형상 개념 그래픽"><defs><linearGradient id="profile-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#556676"/><stop offset=".17" stop-color="#e8f1f8"/><stop offset=".32" stop-color="#a2b4c3"/><stop offset=".47" stop-color="#fff"/><stop offset=".59" stop-color="#697f91"/><stop offset=".77" stop-color="#d9e5ee"/><stop offset="1" stop-color="#657986"/></linearGradient><linearGradient id="profile-edge"><stop stop-color="#64798a"/><stop offset=".45" stop-color="#e5eef4"/><stop offset="1" stop-color="#8ca2b2"/></linearGradient><filter id="profile-shadow" x="-60%" y="-60%" width="220%" height="230%"><feDropShadow dx="0" dy="30" stdDeviation="20" flood-color="#112a40" flood-opacity=".2"/></filter></defs><g class="drawing-guides" fill="none" stroke="#b8c5cf" stroke-width="1"><path d="M30 300H650M340 40V560" stroke-dasharray="3 7"/><circle cx="340" cy="300" r="212"/><circle cx="340" cy="300" r="242" stroke-dasharray="1 12"/></g><g id="profile-body" filter="url(#profile-shadow)"><g id="profile-sides"></g><path id="profile-rim" fill="url(#profile-metal)" fill-rule="evenodd" d="M160 285h340v30H160Z"/><path id="profile-highlight" fill="none" stroke="#fff" stroke-width="1.2" d="M160 285h340"/></g><g class="drawing-ticks" stroke="#c43b35"><path d="M340 45v12M340 543v12M95 300h12M573 300h12"/></g></svg><div class="drawing-bottom"><span id="material-shape-label">01 / MATERIAL</span><span>STAINLESS STEEL · 소재 형상 그래픽</span></div><div class="material-progress" aria-hidden="true"><span></span></div></div>
+      </div>
+    </section>
+
+    <section id="products" class="products section">
+      <div class="wrap">
+        <div class="section-marker"><span class="red-dot"></span>02 — OUR PRODUCTS</div>
+        <div class="section-heading"><h2>필요한 소재,<br>길산에서 찾으세요.</h2><p>형상과 용도에 맞는 제품을 살펴보세요.<br>상세 규격과 공급 조건은 상담으로 확인하실 수 있습니다.</p></div>
+        <div class="product-workspace">
+          <div class="product-tabs" role="tablist" aria-label="제품군">
+            <button id="tab-pipe" role="tab" aria-selected="true" aria-controls="panel-pipe" tabindex="0" data-product="pipe"><span class="tab-number">01</span><span>구조용 강관<small>STRUCTURAL PIPE</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+            <button id="tab-piping" role="tab" aria-selected="false" aria-controls="panel-piping" tabindex="-1" data-product="piping"><span class="tab-number">02</span><span>배관용 강관<small>STAINLESS PIPING</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+            <button id="tab-coil" role="tab" aria-selected="false" aria-controls="panel-coil" tabindex="-1" data-product="coil"><span class="tab-number">03</span><span>판재 · 코일<small>SHEET & COIL</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+            <button id="tab-bar" role="tab" aria-selected="false" aria-controls="panel-bar" tabindex="-1" data-product="bar"><span class="tab-number">04</span><span>봉강 · 형강<small>BAR & SECTION</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+          </div>
+          <div class="product-panels">
+            <article id="panel-pipe" role="tabpanel" aria-labelledby="tab-pipe" class="product-panel" tabindex="0">
+              <div class="product-visual"><span class="visual-label">GILSAN MATERIAL LIBRARY / 01</span><img src="assets/pipe-thumb.jpg" width="300" height="240" alt="길산 공식 홈페이지의 원형 스테인리스 강관 제품 사진" loading="lazy"><span class="visual-caption">STAINLESS STEEL PIPE</span><span class="visual-cross" aria-hidden="true">+</span></div>
+              <div class="product-detail"><div><p class="eyebrow">STRUCTURAL PIPE</p><h3>구조를 세우는 기본.</h3><p>원형과 사각형, 필요한 형상으로.<br>기계구조용 스테인리스 강관을 확인해 보세요.</p><div class="tags"><span>원형 강관</span><span>사각 강관</span><span>스테인리스</span></div></div><div class="product-links"><button class="inline-link" data-inquiry data-inquiry-product="구조용 강관">이 제품 상담하기 <span aria-hidden="true">↗</span></button><a href="https://www.gilsan.co.kr/m2/page2_1_1.asp" target="_blank" rel="noopener noreferrer">공식 제품 자료 <span aria-hidden="true">↗</span></a></div></div>
+            </article>
+            <article id="panel-piping" role="tabpanel" aria-labelledby="tab-piping" class="product-panel" tabindex="0" hidden>
+              <div class="product-visual"><span class="visual-label">GILSAN MATERIAL LIBRARY / 02</span><img src="assets/pipe-thumb.jpg" width="300" height="240" alt="스테인리스 강관 제품군 사진. 배관용 규격은 공식 자료에서 확인" loading="lazy"><span class="visual-caption">STAINLESS PIPING</span><span class="visual-cross" aria-hidden="true">+</span></div>
+              <div class="product-detail"><div><p class="eyebrow">STAINLESS PIPING</p><h3>흐름을 이어주는 소재.</h3><p>사용 환경과 요구 규격에 맞는 배관용 강관.<br>강종·치수·수량을 정리해 상담해 보세요.</p><div class="tags"><span>배관용 강관</span><span>강종 상담</span><span>규격 확인</span></div></div><div class="product-links"><button class="inline-link" data-inquiry data-inquiry-product="배관용 강관">이 제품 상담하기 <span aria-hidden="true">↗</span></button><a href="https://www.gilsan.co.kr/m2/page2_2_1.asp" target="_blank" rel="noopener noreferrer">공식 제품 자료 <span aria-hidden="true">↗</span></a></div></div>
+            </article>
+            <article id="panel-coil" role="tabpanel" aria-labelledby="tab-coil" class="product-panel" tabindex="0" hidden>
+              <div class="product-visual"><span class="visual-label">GILSAN MATERIAL LIBRARY / 03</span><img src="assets/coil-thumb.jpg" width="300" height="240" alt="길산 공식 홈페이지의 스테인리스 코일 제품 사진" loading="lazy"><span class="visual-caption">STAINLESS SHEET & COIL</span><span class="visual-cross" aria-hidden="true">+</span></div>
+              <div class="product-detail"><div><p class="eyebrow">SHEET & COIL</p><h3>가능성을 펼치는 소재.</h3><p>판재부터 코일까지, 다음 가공의 출발점.<br>필요한 강종과 표면 상태를 확인해 보세요.</p><div class="tags"><span>스테인리스 판재</span><span>코일</span><span>표면 상태</span></div></div><div class="product-links"><button class="inline-link" data-inquiry data-inquiry-product="판재 · 코일">이 제품 상담하기 <span aria-hidden="true">↗</span></button><a href="https://www.gilsan.co.kr/m2/page1_1.asp" target="_blank" rel="noopener noreferrer">공식 제품 자료 <span aria-hidden="true">↗</span></a></div></div>
+            </article>
+            <article id="panel-bar" role="tabpanel" aria-labelledby="tab-bar" class="product-panel" tabindex="0" hidden>
+              <div class="product-visual"><span class="visual-label">GILSAN MATERIAL LIBRARY / 04</span><img src="assets/bar-thumb.jpg" width="300" height="240" alt="길산 공식 홈페이지의 환봉 제품 사진" loading="lazy"><span class="visual-caption">BAR & SECTION</span><span class="visual-cross" aria-hidden="true">+</span></div>
+              <div class="product-detail"><div><p class="eyebrow">BAR & SECTION</p><h3>쓰임에 맞는 다양한 형상.</h3><p>환봉, 평철, 앵글, 각봉까지.<br>작업에 필요한 형태의 철강 제품을 살펴보세요.</p><div class="tags"><span>환봉 · 각봉</span><span>평철</span><span>앵글</span></div></div><div class="product-links"><button class="inline-link" data-inquiry data-inquiry-product="봉강 · 형강">이 제품 상담하기 <span aria-hidden="true">↗</span></button><a href="https://www.gilsan.co.kr/m2/page3_1.asp" target="_blank" rel="noopener noreferrer">공식 제품 자료 <span aria-hidden="true">↗</span></a></div></div>
+            </article>
+          </div>
+        </div>
+        <noscript><p class="noscript-note">제품군 전환과 상담 내용 작성에는 JavaScript가 필요합니다. <a href="https://www.gilsan.co.kr/m2/page1_1.asp">공식 제품 목록 보기</a> 또는 041-732-9994로 문의해 주세요.</p></noscript>
+      </div>
+    </section>
+
+    <section id="quality" class="quality section">
+      <div class="wrap">
+        <div class="section-marker light"><span class="red-dot"></span>03 — MADE WITH PRECISION</div>
+        <div class="section-heading"><h2>소재를 다루는 기술.<br>기본을 지키는 품질.</h2><a class="inline-link light" href="https://www.gilsan.co.kr/m3/page2.asp" target="_blank" rel="noopener noreferrer">공식 설비 현황 보기 <span aria-hidden="true">↗</span></a></div>
+        <div class="quality-feature"><div class="quality-image"><img src="assets/hero-02.jpg" width="1896" height="687" alt="길산파이프 공식 홈페이지에 소개된 생산시설 전경" loading="lazy"><div class="image-note"><span class="red-dot"></span> GILSAN PRODUCTION FACILITY</div></div><div class="quality-copy"><span class="micro">FROM MATERIAL TO POSSIBILITY</span><h3>제품의 시작부터<br>마지막 형상까지.</h3><p>슬리팅, 조관, 연마, 각관 성형.<br>길산은 소재가 제품이 되는 과정을 다룹니다.</p><div class="process-line"><span>소재</span><i aria-hidden="true">→</i><span>성형</span><i aria-hidden="true">→</i><span>가공</span></div><p class="fine-print">실제 작업 공정과 공급 가능 사양은 제품별로 확인해 주세요.</p></div></div>
+        <div class="quality-proof"><div class="proof-label"><span class="proof-mark" aria-hidden="true">KS</span><div><span class="micro">CERTIFIED STANDARD</span><h3>기계구조용 스테인리스 강관</h3></div></div><div class="proof-description"><strong>KS D 3536</strong><p>인증번호 96-06-010 · 한국표준협회<br>STS 304 TKC / STS 316 TKC</p></div><a class="round-link" aria-label="KS 인증기관협의회에서 인증 범위 확인, 새 창" href="https://www.ksnara.or.kr/web_basic/certified_vendor/products/view.asp?CertId=CID118931&amp;SearchAgencyId=0&amp;SearchCertiDateEnd=&amp;SearchCertiDateStart=&amp;SearchCertiNum=&amp;SearchCompanyName=&amp;SearchCompanyNumber=&amp;SearchStandardName=&amp;SearchStandardNum=&amp;iPage=436&amp;ipage_size=30&amp;pagen=283&amp;paging=436" target="_blank" rel="noopener noreferrer">↗</a></div>
+        <p class="proof-footnote">KS 인증기관협의회 2026.11.08 조회 기준. 인증 적용 범위는 원문에서 확인하실 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section class="history section wrap">
+      <div class="section-marker"><span class="red-dot"></span>04 — OUR JOURNEY</div>
+      <div class="history-layout"><h2>논산에서 시작한<br>단단한 걸음.</h2><div class="timeline"><div><span>1991</span><p>길산정밀 설립<small>스테인리스 강관을 향한 첫걸음</small></p></div><div><span>1996</span><p>한국 산업 규격(KS) 표시 허가 획득<small>기계구조용 스테인리스 강관</small></p></div><div><span>2006</span><p>길산파이프로 사명 변경<small>길산정밀㈜에서 길산파이프㈜로</small></p></div><div><span>2011</span><p>논산공장 증축 준공<small>생산 기반의 확장</small></p></div></div></div>
+      <a class="inline-link history-link" href="https://www.gilsan.co.kr/m1/page3.asp" target="_blank" rel="noopener noreferrer">길산의 전체 연혁 <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="wrap"><div class="section-marker"><span class="red-dot"></span>05 — LET’S CONNECT</div><div class="contact-layout"><div><h2>다음 작업의 시작,<br>길산과 이야기하세요.</h2><p>찾으시는 제품과 규격을 알려주세요.<br>제품 정보는 살펴보고, 구매 조건은 상담으로 확인하세요.</p><button class="button dark" data-inquiry>상담 내용 준비하기 <span aria-hidden="true">↗</span></button></div><div class="contact-info"><span class="micro">GILSAN PIPE · NONSAN</span><a class="phone" href="tel:0417329994">041-732-9994 <span aria-hidden="true">↗</span></a><dl><div><dt>ADDRESS</dt><dd>충남 논산시 부적면 감곡1길 7-24</dd></div><div><dt>FAX</dt><dd>041-732-9997</dd></div></dl><div class="address-links"><a class="inline-link" href="https://map.naver.com/p/search/%EA%B8%B8%EC%82%B0%ED%8C%8C%EC%9D%B4%ED%94%84%20%EB%85%BC%EC%82%B0" target="_blank" rel="noopener noreferrer">네이버 지도에서 보기 <span aria-hidden="true">↗</span></a><button class="copy-address" data-copy-address>주소 복사 <span aria-hidden="true">⧉</span></button></div><p class="copy-status" id="address-status" role="status" aria-live="polite"></p></div></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><div class="footer-top"><a href="#" class="footer-wordmark" aria-label="처음으로">GILSAN<span>PIPE</span><span class="footer-period">.</span></a><a href="#main" class="back-top">BACK TO TOP <span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><div><strong>길산파이프㈜</strong><p>충남 논산시 부적면 감곡1길 7-24 · TEL 041-732-9994</p></div><div class="footer-links"><a href="https://www.gilsan.co.kr/" target="_blank" rel="noopener noreferrer">기존 공식 홈페이지 ↗</a><span>독립 제작 디자인 시안 · 공식 운영 사이트가 아닙니다.</span></div></div></div></footer>
+
+  <dialog id="inquiry-dialog" aria-labelledby="inquiry-title">
+    <div class="dialog-top"><span class="eyebrow">PRODUCT INQUIRY</span><button class="dialog-close" aria-label="상담 창 닫기">×</button></div><h2 id="inquiry-title">어떤 소재가 필요하신가요?</h2><p class="dialog-description">상담에 필요한 내용을 정리하고 복사해 두세요.<br>제품의 공급 여부와 견적은 전화 상담으로 확인할 수 있습니다.</p>
+    <form id="inquiry-form"><div class="form-field"><label for="inquiry-product">제품군</label><select id="inquiry-product" name="product"><option>구조용 강관</option><option>배관용 강관</option><option>판재 · 코일</option><option>봉강 · 형강</option><option>기타 / 상담 필요</option></select></div><div class="form-row"><div class="form-field"><label for="inquiry-grade">강종 <span>선택</span></label><input id="inquiry-grade" name="grade" placeholder="예: STS 304" maxlength="80"></div><div class="form-field"><label for="inquiry-quantity">수량 <span>선택</span></label><input id="inquiry-quantity" name="quantity" placeholder="예: 100본" maxlength="80"></div></div><div class="form-field"><label for="inquiry-size">규격 <span>선택</span></label><input id="inquiry-size" name="size" placeholder="외경 또는 가로×세로, 두께, 길이" maxlength="160"></div><div class="form-field"><label for="inquiry-notes">요청 사항 <span>선택</span></label><textarea id="inquiry-notes" name="notes" rows="2" placeholder="용도, 희망 납기, 납품 지역 등을 적어주세요." maxlength="1000"></textarea></div><div class="dialog-actions"><button class="button dark" type="submit">상담 내용 복사 <span aria-hidden="true">⧉</span></button><a class="button outline" href="tel:0417329994">전화로 상담 <span aria-hidden="true">↗</span></a></div><p class="form-note">작성 내용은 서버에 전송되거나 저장되지 않습니다.</p><p id="inquiry-status" class="inquiry-status" role="status" aria-live="polite"></p><div id="copy-fallback" hidden><label for="inquiry-result">복사가 제한되어 있어요. 아래 내용을 직접 선택해 복사해 주세요.</label><textarea id="inquiry-result" readonly rows="7"></textarea></div></form>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

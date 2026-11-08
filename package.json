@@ -1,0 +1,11 @@
+{
+  "name": "gilsan-pipe-landing",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Independent Gilsan Pipe landing page design prototype",
+  "scripts": {
+    "build": "node build.cjs",
+    "start": "node server.cjs"
+  },
+  "engines": { "node": ">=20" }
+}
