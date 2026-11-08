@@ -5,6 +5,9 @@
 - 운영 브랜치: `main`
 - 빌드 명령: `npm run build`
 - 공개 디렉터리: `dist`
+- 사이트 주소: https://gilsan-pipe-landing.pages.dev/
+- GitHub 주소: https://github.com/AIjunja/gilsan-pipe-landing
+- Git 연동: `main`에 푸시하면 Cloudflare Pages 자동 빌드·배포
 - 정적 사이트로 실행하며 별도 서버·API 키가 필요하지 않습니다.
 
 `node build.cjs`가 명시적으로 허용한 사이트·폰트·라이선스 파일만 복사합니다. 내부 조사 문서, 브라우저 기록, 검수 이미지, 미사용 자산, 미리보기 서버는 공개 디렉터리에 포함하지 않습니다.
