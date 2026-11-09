@@ -1,6 +1,6 @@
 # 배포 설정
 
-- GitHub 저장소: `AIjunja/gilsan-pipe-landing` (비공개)
+- GitHub 저장소: `AIjunja/gilsan-pipe-landing` (공개)
 - Cloudflare Pages 프로젝트: `gilsan-pipe-landing`
 - 운영 브랜치: `main`
 - 빌드 명령: `npm run build`
