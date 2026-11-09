@@ -92,7 +92,7 @@
   function tick(now) {
     frame=0;
     if(document.hidden) return;
-    const dt=Math.min(40,now-(lastFrame||now));
+    const dt=Math.max(0,now-(lastFrame||now));
     lastFrame=now;
     if (visible && playing && small.matches && automatic) {
       startedAt ??= now;
