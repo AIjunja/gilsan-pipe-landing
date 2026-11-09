@@ -14,6 +14,14 @@
   sides.after(hole);
   const highlight = document.querySelector('#profile-highlight');
   const graphic = document.querySelector('.material-graphic');
+  const motionNote = document.createElement('p');
+  motionNote.className = 'material-motion-note';
+  const motionReason = document.createElement('span');
+  const startMotion = document.createElement('button');
+  startMotion.type = 'button';
+  startMotion.textContent = '모션 재생';
+  motionNote.append(motionReason, startMotion);
+  document.querySelector('.material-copy').after(motionNote);
   const svgNS = 'http://www.w3.org/2000/svg';
   const count = 80;
   const sidePaths = Array.from({length:count}, () => {
@@ -115,6 +123,10 @@
     toggle.setAttribute('aria-label',playing?'모션 일시정지':'모션 재생');
     toggle.querySelector('.motion-toggle-icon').textContent=playing?'Ⅱ':'▷';
     toggle.querySelector('.motion-toggle-label').textContent=playing?'모션 정지':'모션 재생';
+    const pausedByPreference = !playing && reduced.matches && !explicitlyChosen;
+    toggle.title = pausedByPreference ? '기기의 모션 감소 설정으로 정지되어 있습니다. 누르면 모션을 재생합니다.' : '';
+    motionNote.hidden = playing;
+    motionReason.textContent = pausedByPreference ? '모션 감소 설정으로 형상 효과가 정지되어 있어요.' : '형상 효과가 일시정지되어 있어요.';
     document.getAnimations().forEach(animation => {
       if (!playing && animation.effect?.target?.closest?.('.quality-image')) animation.finish();
       else if (!playing && animation.playState === 'running') animation.pause();
@@ -124,6 +136,7 @@
     else { if(small.matches){automatic=true;startedAt=performance.now()-current*9000-1500;} updateScroll();requestFrame(); }
   }
   toggle.addEventListener('click',()=>{explicitlyChosen=true;playing=!playing;setMotion();});
+  startMotion.addEventListener('click',()=>{explicitlyChosen=true;playing=true;setMotion();});
   reduced.addEventListener('change',()=>{if(!explicitlyChosen){playing=!reduced.matches;setMotion();}});
   stageButtons.forEach((button,index)=>button.addEventListener('click',()=>{
     automatic=false;
